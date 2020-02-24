@@ -1,5 +1,5 @@
 import 'package:github_api_testapp/data/networking/model/responses/commits/commits_response.dart';
-import 'package:github_api_testapp/data/repository/commis_repository.dart';
+import 'package:github_api_testapp/data/repository/commits/commis_repository.dart';
 import 'package:rxdart/rxdart.dart';
 
 class CommitsScreenListBloc {

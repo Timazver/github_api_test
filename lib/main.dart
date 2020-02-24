@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:github_api_testapp/ui/custom_styles/custom_colors.dart';
 import 'package:github_api_testapp/ui/custom_styles/custom_text_style.dart';
-import 'package:github_api_testapp/ui/screens/user_repolist_screen.dart';
 import 'package:github_api_testapp/ui/screens/username_enter_screen.dart';
 import 'package:splashscreen/splashscreen.dart';
 

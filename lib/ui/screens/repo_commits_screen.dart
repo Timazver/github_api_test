@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:github_api_testapp/data/networking/model/responses/commits/commits_response.dart';
-import 'package:github_api_testapp/domain/repository/commits_repository_impl.dart';
+import 'package:github_api_testapp/domain/repository/commits/commits_repository_impl.dart';
 import 'package:github_api_testapp/messages.dart';
 import 'package:github_api_testapp/ui/bloc/commits_screen_bloc.dart';
 import 'package:github_api_testapp/ui/components/custom_app_bar.dart';
@@ -11,7 +11,7 @@ class RepoCommitsScreen extends StatelessWidget {
   final String userName;
   final String repoName;
 
-  var commitsScreenBloc = CommitsScreenListBloc(CommitsRepositoryImpl());
+  final commitsScreenBloc = CommitsScreenListBloc(CommitsRepositoryImpl());
 
   RepoCommitsScreen({this.userName, this.repoName}) {
     commitsScreenBloc.getRepoCommits(userName, repoName);

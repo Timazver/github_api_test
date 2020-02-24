@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:github_api_testapp/messages.dart';
 import 'package:github_api_testapp/data/networking/model/responses/repos/repolist_response.dart';
-import 'package:github_api_testapp/domain/repository/repolist_repository_impl.dart';
+import 'package:github_api_testapp/domain/repository/repos/repolist_repository_impl.dart';
 import 'package:github_api_testapp/ui/bloc/repolist_bloc.dart';
 import 'package:github_api_testapp/ui/components/custom_app_bar.dart';
 import 'package:github_api_testapp/ui/custom_styles/custom_colors.dart';
@@ -11,7 +11,7 @@ import 'package:github_api_testapp/ui/screens/repo_commits_screen.dart';
 class UserRepolistScreen extends StatelessWidget {
   final String userName;
 
-  var repolistBloc = RepolistBloc(RepolistRepositoryImpl());
+  final repolistBloc = RepolistBloc(RepolistRepositoryImpl());
 
   UserRepolistScreen({this.userName}) {
     repolistBloc.getUserRepos(userName);

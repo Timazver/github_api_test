@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:github_api_testapp/messages.dart';
 import 'package:github_api_testapp/data/networking/model/responses/repos/repolist_response.dart';
-import 'package:github_api_testapp/data/repository/repolist_repository.dart';
+import 'package:github_api_testapp/data/repository/repos/repolist_repository.dart';
 import 'package:rxdart/rxdart.dart';
 
 class RepolistBloc {
