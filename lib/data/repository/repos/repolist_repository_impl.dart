@@ -5,6 +5,8 @@ import 'package:github_api_testapp/data/networking/endpoints/repos/repolist_endp
 import 'package:github_api_testapp/data/networking/manager/repos/repos_get_manager.dart';
 import 'package:github_api_testapp/data/networking/model/responses/repos/repolist_response.dart';
 
+import '../../../data/repository/repos/repolist_repository.dart';
+
 class RepolistRepositoryImpl implements RepolistRepository {
   ReposGetManager manager;
 
